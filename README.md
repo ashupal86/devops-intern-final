@@ -74,3 +74,10 @@ to run the nomad install it from officail documentation and then to start the no
 - run `nomad agent -dev`
  
 - to run the job run `nomad job run nomad/hello.nomad` which is designed to run the "devops-hello" image
+
+
+## Monitoring with Grafana Loki
+![Docker](SS/image1.png)
+we have our containers running `Loki`,`Alloy` and `Grafana`
+to run the container we have used the docker compose cmd `docker compose up -d`
+it fetches the logs of docker and display them in grafana.

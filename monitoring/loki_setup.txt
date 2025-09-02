@@ -1,0 +1,6 @@
+Monitoring with Grafana loki
+
+- we can run it thorugh cli and docker compose up -d cmd as we have docker-compose.yml 
+so i run the cmd I have setup the compose file to start with all the configurations files.
+
+for viewing the logs we can use the tail -f <path_of_the_log_file> it will display logs in realtime
