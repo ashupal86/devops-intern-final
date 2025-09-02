@@ -69,3 +69,8 @@ Hello, DevOps!
 ![CI](https://github.com/ashupal86/devops-intern-final/actions/workflows/ci.yml/badge.svg)  
 This is a exmaple of working CI pipleing build in Github Actions.
 
+## Nomad 
+to run the nomad install it from officail documentation and then to start the nomad 
+- run `nomad agent -dev`
+ 
+- to run the job run `nomad job run nomad/hello.nomad` which is designed to run the "devops-hello" image
