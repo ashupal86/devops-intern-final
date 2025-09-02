@@ -9,7 +9,14 @@ local.file_match "docker_logs" {
 }
 
 loki.source.file "docker" {
-  targets    = local.file_match.docker_logs.targets
+  targets    = [
+    {
+      __path__ = local.file_match.docker_logs.targets,
+      job = "test",
+      host = "local",
+
+      },
+    ]
   forward_to = [loki.write.default.receiver]
 }
 
