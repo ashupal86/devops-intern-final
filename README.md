@@ -81,3 +81,17 @@ to run the nomad install it from officail documentation and then to start the no
 we have our containers running `Loki`,`Alloy` and `Grafana`
 to run the container we have used the docker compose cmd `docker compose up -d`
 it fetches the logs of docker and display them in grafana.
+
+
+## MlFlow logging
+Running container for mlflow like posgresql,minio for s3 bucket and mlflow server.
+![DOCKER](SS/image3.png)
+
+![MLFLOWUI](SS/mlflowui.png)
+Logged a model into the mlflow server and it is displayed in ui.
+
+![MINIOS#](SS/minios3ui.png)
+Bucket created to log the model.
+
+![MLFLOWOUTPUT](SS/terminal.png)
+Terminal output when logged a simple model into the tracking system.
